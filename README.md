@@ -5,6 +5,8 @@ Overview of the Projects Completed
 - Project Title
 - Objective
 - Dataset
+- ![Exploratory analysis](https://github.com/user-attachments/assets/973648d0-39fe-4bdc-ac46-dc077a9abb6d)
+
 - Methodology
   - Data Collection and Preperation
   - Descriptive Statistics
