@@ -60,13 +60,20 @@ Availability protection enabled for the s3 bucket
  
   -![image](https://github.com/user-attachments/assets/b0910362-217d-4a5f-9a0e-d74a73f053dd)
 
-- Data Governance
+Data Governance
 
 - The Visual ETL (Extract, Transform, Load) workflow in AWS Glue is used for processing our data from city of Vancouver for the Business licenses year 2024 for the month of March. As part of the data governance process,  used the workflow which ensures data quality by validating the uniqueness and completeness of the data. Records that meet these quality checks are sent to the "Passed" folder in an S3 bucket, while those that do not meet the standards are moved to the "Failed" folder. This segregation helps maintain data integrity and ensures that only high-quality, reliable data is processed further.
-- 
+  
 Data Governance throgh ETL
 - ![image](https://github.com/user-attachments/assets/06a75ee5-1eb5-42db-b5b3-6b7313b83455)
 
 - Data Observability
+- 
+- To improve data observability, I used Amazon CloudWatch to create a dashboard that shows important metrics like bucket size, the number of objects stored, and estimated storage costs. As seen in the screenshot, the dashboard provides a clear view of these metrics, making it easier to monitor data usage. Logs are also turned on for each object to quickly identify and fix any issues. This ensures that the data storage and processing systems run smoothly with minimal downtime or errors.
+Dashboard for the Objects
+- ![image](https://github.com/user-attachments/assets/88eb3b7b-af5d-4e91-9bad-a555724dfc21)
+- ![image](https://github.com/user-attachments/assets/67adb151-9c1c-4788-b0a3-4e17eac77b3a)
+
+
 
 # [Project 5: Data Quality Control]
