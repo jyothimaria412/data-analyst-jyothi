@@ -2,9 +2,16 @@
 Overview of the Projects Completed
 # [Project 1: Descriptive Analysis of the Business Licenses issues for the city of Vancouver for year 2024 
 - Project Description
-- In order to improve operations and decision-making through the use of big data, the City of Vancouver has numerous . Building a Data Analytic Platform (DAP) is the proper approach in this situation to transform the data into accurate and practical information and to offer significant insights for the city. For the analysis, we are collecting company license data for 2024.
+- This descriptive analysis focuses on the filtered dataset of Business Licenses for the City of Vancouver in March 2024. It examines the proportion of total business licenses with the status "issued" for the 'Health Services' business type and compares it to the total licenses across all business types.
+
+The analysis aims to determine the relative share of 'Health Services' licenses, providing insights into licensing trends and assessing whether this sector plays a significant or minor role in the overall business licensing landscape.
+
+This information is valuable for identifying sector-specific growth and understanding the impact of 'Health Services' in Vancouver's business licenses.
+
 - Project Title
+- Analysis of Business Licenses for Health Services in the City of Vancouver
 - Objective
+- To analyze the proportion of business licenses issued for the 'Health Services' business type in March 2024 compared to the total licenses across all business types. This project aims to understand the relative contribution of 'Health Services' to the overall business licensing landscape in Vancouver, identifying licensing trends and assessing the significance of this sector in the  city's business licenses.
 - Dataset
 - ![Exploratory analysis](https://github.com/user-attachments/assets/973648d0-39fe-4bdc-ac46-dc077a9abb6d)
 
