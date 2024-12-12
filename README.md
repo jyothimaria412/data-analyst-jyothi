@@ -18,7 +18,11 @@ Overview of the Projects Completed
 - Tools and Technologies
 - Deliverables
  
-# [Project 2: Descriptive Analysis]
-# [Project 3: Diagonostic Analysis]
-# [Project 4: Data Wrangling]
+# Project 2: Exploratory Analysis]
+# [Project 3: DAP Impementation
+- Data Enriching
+- Data Protection
+- Data Governance
+- Data Observability
+
 # [Project 5: Data Quality Control]
