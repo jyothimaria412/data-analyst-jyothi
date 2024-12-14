@@ -29,7 +29,9 @@
     Data Profile view
     
      ![image](https://github.com/user-attachments/assets/6b03dad0-2b36-4aeb-b3dd-d3624964504e)
+  
   -  Data Cleaning
+    
       We have cleaned the data and created the recipes based on our requirements. The data is already structured data, so there isn’t much transformation in this stage. Also, while creating the job, we have set the output data partitioned based on the column ‘Business Type’
      
      ![image](https://github.com/user-attachments/assets/425af4ea-d7e4-4bc5-84b5-6bb29d74ad6d)
@@ -43,6 +45,7 @@
      ![image](https://github.com/user-attachments/assets/ff581b4d-8ba6-4007-b5cd-a51472ce8d05)
    
 - Descriptive Statistics
+  
     I have done the descriptive analysis based on proportion of business licenses issued for the "Health Services" business type relative to the total number of business licenses across all categories. This analysis will help us to understand the representation of the ‘Health Services’ sector compared to other business type under the status ‘Issued’.
   
 - Proportion of business licenses issued for the "Health Services" business type calculation
@@ -50,7 +53,7 @@
   ![image](https://github.com/user-attachments/assets/5d8b90ec-7476-43ab-a6e4-7e1c3c190315)
   
 - Insights and Findings
-- 
+  
   - Proportion of Health Services Licenses:
     For active licenses (status = Issued), 19 licenses were issued under the "Health Services" category.
   This accounts for approximately 9.85% of the total licenses issued across all business types.
