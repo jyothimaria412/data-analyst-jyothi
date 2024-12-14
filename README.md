@@ -2,17 +2,19 @@
 # Overview of the Projects Completed
 # Project 1: Descriptive Analysis of the Business Licenses issues for the city of Vancouver for year 2024 
 - Project Description
-- This descriptive analysis focuses on the filtered dataset of Business Licenses for the City of Vancouver in March 2024. It examines the proportion of total business licenses with the status "issued" for the 'Health Services' business type and compares it to the total licenses across all business types.
-- The analysis aims to determine the relative share of 'Health Services' licenses, providing insights into licensing trends and assessing whether this sector plays a significant or minor role in the overall business licensing landscape.
-- This information is valuable for identifying sector-specific growth and understanding the impact of 'Health Services' in Vancouver's business licenses.
+   This descriptive analysis focuses on the filtered dataset of Business Licenses for the City of Vancouver in March 2024. It examines the proportion of total business licenses with the status "issued" for the 'Health Services' business type and compares it to the total licenses across all business types.
+  The analysis aims to determine the relative share of 'Health Services' licenses, providing insights into licensing trends and assessing whether this sector plays a significant or minor role in the overall business licensing landscape.
+  This information is valuable for identifying sector-specific growth and understanding the impact of 'Health Services' in Vancouver's business licenses.
 - Objective
-- To analyze the proportion of business licenses issued for the 'Health Services' business type in March 2024 compared to the total licenses across all business types. This project aims to understand the relative contribution of 'Health Services' to the overall business licensing landscape in Vancouver, identifying licensing trends and assessing the significance of this sector in the  city's business licenses.
+  To analyze the proportion of business licenses issued for the 'Health Services' business type in March 2024 compared to the total licenses across all business types. This project aims to understand the relative contribution of 'Health Services' to the overall business licensing landscape in Vancouver, identifying licensing trends and assessing the significance of this sector in the  city's business licenses.
+  
 - Dataset
   ![Exploratory analysis](https://github.com/user-attachments/assets/973648d0-39fe-4bdc-ac46-dc077a9abb6d)
 
 - Methodology
   
-    - Data Collection and Preperation
+    -  Data Collection and Preperation
+  
     -  The below figure shows teh design diagram for the Data ingestion. The extracted data from the City of Vancouver Portal is ingested to teh S3 raw bucket and it is partioned as year 2024, March. The data is a structured data.
  
     ![image](https://github.com/user-attachments/assets/0b2b071d-fd3f-4626-a246-bb8b98b202df)
@@ -22,35 +24,45 @@
    ![image](https://github.com/user-attachments/assets/eb385f84-f398-4ebe-8fb8-f9febf873714)
 
   -  Data Profiling
-  -  The data will be moved for profiling and then to cleaning through AWS Databrew, where data will be fetched for profiling for further analysis of data and will be cleaned accordingly. The cleaned and profiled data will be moved to another bucket which is called ‘bl-trf-jm’
-  -  Diagram designed for Data Profiling and Cleaning
+      The data will be moved for profiling and then to cleaning through AWS Databrew, where data will be fetched for profiling for further analysis of data and will be cleaned accordingly. The cleaned and profiled data will be moved to another bucket which is called ‘bl-trf-jm’
+    Diagram designed for Data Profiling and Cleaning
  
      ![image](https://github.com/user-attachments/assets/2dd95624-662b-499c-bb67-1c4d39871b22)
-  -  Data Profile view
+     
+    Data Profile view
+    
      ![image](https://github.com/user-attachments/assets/6b03dad0-2b36-4aeb-b3dd-d3624964504e)
   -  Data Cleaning
-  -  We have cleaned the data and created the recipes based on our requirements. The data is already structured data, so there isn’t much transformation in this stage. Also, while creating the job, we have set the output data partitioned based on the column ‘Business Type’
+      We have cleaned the data and created the recipes based on our requirements. The data is already structured data, so there isn’t much transformation in this stage. Also, while creating the job, we have set the output data partitioned based on the column ‘Business Type’
+     
      ![image](https://github.com/user-attachments/assets/425af4ea-d7e4-4bc5-84b5-6bb29d74ad6d)
+     
   -  Data transformed to bl-trf-jm bucket
+    
      ![image](https://github.com/user-attachments/assets/dc8ff842-cf27-4333-bb1b-24c05b1c5371)
-  -  Data after the cleaning process was placed in the ‘bl-trf-jm’ bucket. Here we have partitioned the data based on the ‘Business type’ and ‘Status’
-  -  Data Pipeline Design
-  -  Data Pipeline Design Process
+     
+      Data after the cleaning process was placed in the ‘bl-trf-jm’ bucket. Here we have partitioned the data based on the ‘Business type’ and ‘Status’
+ - Data Pipeline Design Process
      ![image](https://github.com/user-attachments/assets/ff581b4d-8ba6-4007-b5cd-a51472ce8d05)
+   
 - Descriptive Statistics
-- I have done the descriptive analysis based on proportion of business licenses issued for the "Health Services" business type relative to the total number of business licenses across all categories. This analysis will help us to understand the representation of the ‘Health Services’ sector compared to other business type under the status ‘Issued’.
+    I have done the descriptive analysis based on proportion of business licenses issued for the "Health Services" business type relative to the total number of business licenses across all categories. This analysis will help us to understand the representation of the ‘Health Services’ sector compared to other business type under the status ‘Issued’.
+  
 - Proportion of business licenses issued for the "Health Services" business type calculation
+  
   ![image](https://github.com/user-attachments/assets/5d8b90ec-7476-43ab-a6e4-7e1c3c190315)
+  
 - Insights and Findings
+- 
   - Proportion of Health Services Licenses:
-For active licenses (status = Issued), 19 licenses were issued under the "Health Services" category.
-This accounts for approximately 9.85% of the total licenses issued across all business types.
-Inactive Licenses:
-For inactive licenses (status = Inactive), only 2 licenses were associated with the "Health Services" business type.
-This include a 50% proportion of the total inactive licenses, which is high for this category.
+    For active licenses (status = Issued), 19 licenses were issued under the "Health Services" category.
+  This accounts for approximately 9.85% of the total licenses issued across all business types.
+  Inactive Licenses:
+  For inactive licenses (status = Inactive), only 2 licenses were associated with the "Health Services" business type.
+  This include a 50% proportion of the total inactive licenses, which is high for this category.
 
 - ### Conclusion
-- The analysis highlights a notable relationship between the number of licenses issued (count(businessType)) and the average fees paid (avg(feePaid)) by business types. Business types with higher license counts, such as "Office," generally exhibit moderate and uniform average fees, reflecting standardized licensing structures. In contrast, business types with lower license counts, like "Electrical Contractor," tend to have significantly higher average fees, possibly due to specialized requirements. Outliers, such as "Beauty Services," demonstrate high average fees despite fewer licenses, suggesting unique licensing or operational factors that merit further investigation.
+   The analysis highlights a notable relationship between the number of licenses issued (count(businessType)) and the average fees paid (avg(feePaid)) by business types. Business types with higher license counts, such as "Office," generally exhibit moderate and uniform average fees, reflecting standardized licensing structures. In contrast, business types with lower license counts, like "Electrical Contractor," tend to have significantly higher average fees, possibly due to specialized requirements. Outliers, such as "Beauty Services," demonstrate high average fees despite fewer licenses, suggesting unique licensing or operational factors that merit further investigation.
 The analysis reveals that in March 2024, the "Health Services" business type accounted for approximately 9.85% of all active business licenses (status = Issued) in the City of Vancouver. This indicates a moderate representation of the sector compared to other business types. Additionally, among inactive licenses, "Health Services" holds a significant proportion of 50%, highlighting potential areas for further investigation into sector-specific challenges or opportunities. This analysis provides a clear understanding of the role and performance of the "Health Services" sector within the overall business licensing landscape.
 
  
