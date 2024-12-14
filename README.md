@@ -9,6 +9,7 @@
   To analyze the proportion of business licenses issued for the 'Health Services' business type in March 2024 compared to the total licenses across all business types. This project aims to understand the relative contribution of 'Health Services' to the overall business licensing landscape in Vancouver, identifying licensing trends and assessing the significance of this sector in the  city's business licenses.
   
 - Dataset
+  
   ![Exploratory analysis](https://github.com/user-attachments/assets/973648d0-39fe-4bdc-ac46-dc077a9abb6d)
 
 - Methodology
@@ -67,29 +68,35 @@ The analysis reveals that in March 2024, the "Health Services" business type acc
 
  
 # Project 2: Exploratory Analysis]
+
 - Objective: Do Business Types with Higher License Counts Have Lower Average Fees?
-- As done in the descriptive analysis, data is ingested, then profiling and cleaning, and then data is analysed in the pipeline process as shown below.
+   As done in the descriptive analysis, data is ingested, then profiling and cleaning, and then data is analysed in the pipeline process as shown below.
 - 
 - Analysis of Business Licenses and Fees Paid by Business Type for March 2024
+- 
   ![image](https://github.com/user-attachments/assets/f8d45849-b002-4781-90eb-035b1231010b)
+  
 - Data Pipeline Design
+- 
   ![image](https://github.com/user-attachments/assets/f74958d3-4518-4d9b-ab9f-296b5c919a7d)
+  
 - The objective of this analysis is to explore the relationship between the number of licenses issued for a business type (count(businessType)) and the average fee paid (avg(feePaid)) by each business type. This is to identify patterns or trends such as whether business types with more licenses tend to pay lower average fees and highlight any outliers in the dataset
 -  Insights and Findings
--  Correlation Analysis
-To analyze the relationship between count(businessType) and avg(feePaid):
+-  
+  - Correlation Analysis
+
+   To analyze the relationship between count(businessType) and avg(feePaid):
 Trends Observed:
-Business types with higher license counts like ‘Office’ tend to have moderate average fees.
+   Business types with higher license counts like ‘Office’ tend to have moderate average fees.
 Some business types with low license counts like ‘Electrical Contractor’ have significantly higher average fees.
 Patterns:
-Business types with higher counts typically have more uniform average fees, indicating standardized licensing fees.
+   Business types with higher counts typically have more uniform average fees, indicating standardized licensing fees.
 Outliers exist where certain business types (e.g., "Beauty Services") have a low number of licenses but high average fees may be due to specialized requirements.
 - ### Conclusion
-
-
-
+   The analysis highlights a notable relationship between the number of licenses issued (`count(businessType)`) and the average fees paid (`avg(feePaid)`) by business types. Business types with higher license counts, such as "Office," generally exhibit moderate and uniform average fees, reflecting standardized licensing structures. In contrast, business types with lower license counts, like "Electrical Contractor," tend to have significantly higher average fees, possibly due to specialized requirements. Outliers, such as "Beauty Services," demonstrate high average fees despite fewer licenses, suggesting unique licensing or operational factors that merit further investigation.
 
 # Project 3: DAP Impementation
+
 - Project Description
   
   The dataset used is the Business Licence 2024 dataset for March. It contains information about various businesses including their type, license status, and other related details. This dataset is critical for analyzing business trends, compliance, and other useful information.
@@ -99,6 +106,7 @@ Outliers exist where certain business types (e.g., "Beauty Services") have a low
   I have started with Data enriching. I have a structured dataset and in this step, we used Amazon Athena to run a SQL query on a dataset stored in the AWS Data Catalog. The query counts the number of records where the business_type column equals "Office." This step ensures that the enriched dataset filtered and ready for further analysis or reporting.
 This query was necessary to focus specifically on the "Office" business type. Data enrichment involves refining the data by filtering or transforming it to meet specific needs. By using this segment, we could prepare the dataset for detailed analysis relevant to business needs or reporting goals. It is found that there is a total count of 123 business license which is issued in the office type segment in Vancouver for 2024 for the month of March.
   Finding the total count of business type “Office”
+  
   ![image](https://github.com/user-attachments/assets/231f66db-8c25-41f5-9755-be47a16e9305)
 
 Data Protection
