@@ -55,12 +55,33 @@ For inactive licenses (status = Inactive), only 2 licenses were associated with 
 This include a 50% proportion of the total inactive licenses, which is high for this category.
 
 - ### Conclusion
-
+- The analysis highlights a notable relationship between the number of licenses issued (count(businessType)) and the average fees paid (avg(feePaid)) by business types. Business types with higher license counts, such as "Office," generally exhibit moderate and uniform average fees, reflecting standardized licensing structures. In contrast, business types with lower license counts, like "Electrical Contractor," tend to have significantly higher average fees, possibly due to specialized requirements. Outliers, such as "Beauty Services," demonstrate high average fees despite fewer licenses, suggesting unique licensing or operational factors that merit further investigation.
 The analysis reveals that in March 2024, the "Health Services" business type accounted for approximately 9.85% of all active business licenses (status = Issued) in the City of Vancouver. This indicates a moderate representation of the sector compared to other business types. Additionally, among inactive licenses, "Health Services" holds a significant proportion of 50%, highlighting potential areas for further investigation into sector-specific challenges or opportunities. This analysis provides a clear understanding of the role and performance of the "Health Services" sector within the overall business licensing landscape.
-- Tools and Technologies
-- Deliverables
+
  
 # Project 2: Exploratory Analysis]
+- Objective: Do Business Types with Higher License Counts Have Lower Average Fees?
+- As done in the descriptive analysis, data is ingested, then profiling and cleaning, and then data is analysed in the pipeline process as shown below.
+- 
+- Analysis of Business Licenses and Fees Paid by Business Type for March 2024
+- ![image](https://github.com/user-attachments/assets/f8d45849-b002-4781-90eb-035b1231010b)
+- Data Pipeline Design
+- ![image](https://github.com/user-attachments/assets/f74958d3-4518-4d9b-ab9f-296b5c919a7d)
+- The objective of this analysis is to explore the relationship between the number of licenses issued for a business type (count(businessType)) and the average fee paid (avg(feePaid)) by each business type. This is to identify patterns or trends such as whether business types with more licenses tend to pay lower average fees and highlight any outliers in the dataset
+-  Insights and Findings
+-  Correlation Analysis
+To analyze the relationship between count(businessType) and avg(feePaid):
+Trends Observed:
+Business types with higher license counts like ‘Office’ tend to have moderate average fees.
+Some business types with low license counts like ‘Electrical Contractor’ have significantly higher average fees.
+Patterns:
+Business types with higher counts typically have more uniform average fees, indicating standardized licensing fees.
+Outliers exist where certain business types (e.g., "Beauty Services") have a low number of licenses but high average fees may be due to specialized requirements.
+- ### Conclusion
+
+
+
+
 # Project 3: DAP Impementation
 - Project Description
   
