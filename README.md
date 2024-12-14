@@ -8,15 +8,11 @@
 - Objective
   To analyze the proportion of business licenses issued for the 'Health Services' business type in March 2024 compared to the total licenses across all business types. This project aims to understand the relative contribution of 'Health Services' to the overall business licensing landscape in Vancouver, identifying licensing trends and assessing the significance of this sector in the  city's business licenses.
   
-- Dataset
-  
-  ![Exploratory analysis](https://github.com/user-attachments/assets/973648d0-39fe-4bdc-ac46-dc077a9abb6d)
-
 - Methodology
   
     -  Data Collection and Preperation
   
-    -  The below figure shows teh design diagram for the Data ingestion. The extracted data from the City of Vancouver Portal is ingested to teh S3 raw bucket and it is partioned as year 2024, March. The data is a structured data.
+    -  The below figure shows the design diagram for the Data ingestion. The extracted data from the City of Vancouver Portal is ingested to teh S3 raw bucket and it is partioned as year 2024, March. The data is a structured data.
  
     ![image](https://github.com/user-attachments/assets/0b2b071d-fd3f-4626-a246-bb8b98b202df)
  
