@@ -1,5 +1,5 @@
 # data-analyst-jyothi
-Overview of the Projects Completed
+# Overview of the Projects Completed
 # Project 1: Descriptive Analysis of the Business Licenses issues for the city of Vancouver for year 2024 
 - Project Description
 - This descriptive analysis focuses on the filtered dataset of Business Licenses for the City of Vancouver in March 2024. It examines the proportion of total business licenses with the status "issued" for the 'Health Services' business type and compares it to the total licenses across all business types.
@@ -25,7 +25,7 @@ Overview of the Projects Completed
   -  The data will be moved for profiling and then to cleaning through AWS Databrew, where data will be fetched for profiling for further analysis of data and will be cleaned accordingly. The cleaned and profiled data will be moved to another bucket which is called ‘bl-trf-jm’
   -  Diagram designed for Data Profiling and Cleaning
  
-  -  ![image](https://github.com/user-attachments/assets/2dd95624-662b-499c-bb67-1c4d39871b22)
+     ![image](https://github.com/user-attachments/assets/2dd95624-662b-499c-bb67-1c4d39871b22)
   -  Data Profile view
      ![image](https://github.com/user-attachments/assets/6b03dad0-2b36-4aeb-b3dd-d3624964504e)
   -  Data Cleaning
